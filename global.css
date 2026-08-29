@@ -1,20 +1,18 @@
 :root {
-  /* Palette — deep navy & gold, warm cream backgrounds */
-  --cream: #FAF7F1;
-  --cream-deep: #F1EADC;
-  --ink: #16213E;
-  --ink-soft: #545E78;
-  --navy: #16213E;
-  --navy-deep: #0E1730;
-  --marigold: #D4A657;
-  --marigold-deep: #B8863A;
+  /* Palette — inspired by marigold garlands (thoranam) & Tamil Nadu countryside */
+  --cream: #FFF8EC;
+  --cream-deep: #FCEFD8;
+  --ink: #1F2A44;
+  --ink-soft: #4A5468;
+  --marigold: #F5A623;
+  --marigold-deep: #DC8A0F;
   --leaf: #4C9A6E;
   --leaf-deep: #357A52;
-  --coral: #D4A657;
+  --coral: #E8604C;
   --sky: #6FB7DE;
   --white: #FFFFFF;
 
-  --font-display: 'Playfair Display', Georgia, serif;
+  --font-display: 'Fredoka', system-ui, sans-serif;
   --font-body: 'Work Sans', system-ui, sans-serif;
 
   --radius-lg: 28px;
@@ -78,7 +76,7 @@ button {
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--marigold-deep);
-  background: rgba(212, 166, 87, 0.14);
+  background: rgba(245, 166, 35, 0.14);
   padding: 6px 16px;
   border-radius: 999px;
   margin-bottom: 16px;
@@ -99,11 +97,11 @@ button {
 .btn:active { transform: scale(0.97); }
 
 .btn-primary {
-  background: var(--marigold);
-  color: var(--navy-deep);
-  box-shadow: 0 8px 20px rgba(212, 166, 87, 0.35);
+  background: var(--coral);
+  color: var(--white);
+  box-shadow: 0 8px 20px rgba(232, 96, 76, 0.35);
 }
-.btn-primary:hover { box-shadow: 0 10px 24px rgba(212, 166, 87, 0.5); }
+.btn-primary:hover { box-shadow: 0 10px 24px rgba(232, 96, 76, 0.45); }
 
 .btn-outline {
   background: transparent;
