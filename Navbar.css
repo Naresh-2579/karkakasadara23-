@@ -1,0 +1,104 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--navy);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.navbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-logo-dot {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--marigold), var(--marigold-deep));
+  flex-shrink: 0;
+}
+
+.navbar-brand-text {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+.navbar-brand-text small {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  color: rgba(255,255,255,0.55);
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
+.navbar-link {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: rgba(255,255,255,0.75);
+  padding: 8px 2px;
+}
+.navbar-link.is-active { color: var(--marigold); }
+
+.navbar-staff-btn {
+  padding: 9px 20px;
+  font-size: 0.85rem;
+  background: transparent;
+  border: 1.5px solid rgba(255,255,255,0.4);
+  color: #fff;
+  box-shadow: none;
+}
+.navbar-staff-btn:hover { background: rgba(255,255,255,0.1); }
+
+.navbar-burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  padding: 8px;
+}
+.navbar-burger span {
+  width: 24px;
+  height: 2.5px;
+  background: #fff;
+  border-radius: 2px;
+}
+
+@media (max-width: 860px) {
+  .navbar-links {
+    position: fixed;
+    top: 66px;
+    left: 0;
+    right: 0;
+    background: var(--navy);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    padding: 16px 20px 24px;
+    box-shadow: 0 12px 20px rgba(0,0,0,0.25);
+    display: none;
+  }
+  .navbar-links.is-open { display: flex; }
+  .navbar-link { width: 100%; padding: 12px 4px; border-bottom: 1px solid rgba(255,255,255,0.08); color: rgba(255,255,255,0.85); }
+  .navbar-staff-btn { margin-top: 12px; width: 100%; }
+  .navbar-burger { display: flex; }
+}
